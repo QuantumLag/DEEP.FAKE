@@ -1,0 +1,221 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.qlcom.hack"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permissions required for camera scanner and file verification -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission
+13-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:7:5-107
+14        android:name="android.permission.READ_EXTERNAL_STORAGE"
+14-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:7:22-77
+15        android:maxSdkVersion="32" />
+15-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:7:78-104
+16    <uses-permission
+16-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:8:5-137
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:8:22-78
+18        android:maxSdkVersion="28" />
+18-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:8:79-105
+19    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+19-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:9:5-76
+19-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:9:22-73
+20
+21    <!-- Camera hardware specification -->
+22    <uses-feature
+22-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:12:5-84
+23        android:name="android.hardware.camera"
+23-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:12:19-57
+24        android:required="true" />
+24-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:12:58-81
+25    <uses-feature
+25-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:13:5-95
+26        android:name="android.hardware.camera.autofocus"
+26-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:13:19-67
+27        android:required="false" />
+27-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:13:68-92
+28
+29    <queries>
+29-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:22:5-26:15
+30        <intent>
+30-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:23:9-25:18
+31            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+31-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:24:13-86
+31-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:24:21-83
+32        </intent>
+33    </queries>
+34
+35    <permission
+35-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+36        android:name="com.qlcom.hack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.qlcom.hack.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+40
+41    <application
+41-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:15:5-35:19
+42        android:allowBackup="true"
+42-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:16:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.12.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\8a5439063ac91ec11b99ff392b5a0821\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+44        android:dataExtractionRules="@xml/data_extraction_rules"
+44-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:17:9-65
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:fullBackupContent="@xml/backup_rules"
+47-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:18:9-54
+48        android:icon="@android:mipmap/sym_def_app_icon"
+48-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:19:9-56
+49        android:label="@string/app_name"
+49-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:20:9-41
+50        android:roundIcon="@android:mipmap/sym_def_app_icon"
+50-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:21:9-61
+51        android:supportsRtl="true"
+51-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:22:9-35
+52        android:testOnly="true"
+53        android:theme="@style/Theme.QlcomHack" >
+53-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:23:9-47
+54        <activity
+54-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:26:9-34:20
+55            android:name="com.qlcom.hack.MainActivity"
+55-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:27:13-41
+56            android:exported="true"
+56-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:28:13-36
+57            android:theme="@style/Theme.QlcomHack" >
+57-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:29:13-51
+58            <intent-filter>
+58-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:30:13-33:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:31:17-69
+59-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:31:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:32:17-77
+61-->C:\SKImp\Projects\Qlcom-hack\app\src\main\AndroidManifest.xml:32:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <uses-library
+65-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:29:9-31:40
+66            android:name="androidx.camera.extensions.impl"
+66-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:30:13-59
+67            android:required="false" />
+67-->[androidx.camera:camera-extensions:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\9566442f45efecddba77949867b95b65\transformed\camera-extensions-1.3.1\AndroidManifest.xml:31:13-37
+68
+69        <service
+69-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+70            android:name="androidx.camera.core.impl.MetadataHolderService"
+70-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+71            android:enabled="false"
+71-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+72            android:exported="false" >
+72-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+74                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+74-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+75                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+75-->[androidx.camera:camera-camera2:1.3.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\548afc31d87687ace788e5e882e31295\transformed\camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+76        </service>
+77
+78        <activity
+78-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\2630ce9efac816190e84f06f645eb617\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+79            android:name="androidx.activity.ComponentActivity"
+79-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\2630ce9efac816190e84f06f645eb617\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+80            android:exported="true" />
+80-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\2630ce9efac816190e84f06f645eb617\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+81        <activity
+81-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\6a5e02154211b3621f4d669449734d81\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+82            android:name="androidx.compose.ui.tooling.PreviewActivity"
+82-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\6a5e02154211b3621f4d669449734d81\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+83            android:exported="true" />
+83-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\6a5e02154211b3621f4d669449734d81\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.qlcom.hack.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\0918ed7f9d69d8403e7d4708eee17ed5\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\bc6c1c0b873a15a3f4253d78ddee1c97\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\bc6c1c0b873a15a3f4253d78ddee1c97\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\bc6c1c0b873a15a3f4253d78ddee1c97\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+97                android:value="androidx.startup" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+98        </provider>
+99
+100        <service
+100-->[androidx.room:room-runtime:2.6.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\346a5fa3f33f048d3d33b109af542a92\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+101            android:name="androidx.room.MultiInstanceInvalidationService"
+101-->[androidx.room:room-runtime:2.6.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\346a5fa3f33f048d3d33b109af542a92\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+102            android:directBootAware="true"
+102-->[androidx.room:room-runtime:2.6.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\346a5fa3f33f048d3d33b109af542a92\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+103            android:exported="false" />
+103-->[androidx.room:room-runtime:2.6.1] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\346a5fa3f33f048d3d33b109af542a92\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+104
+105        <receiver
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+107            android:directBootAware="false"
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+108            android:enabled="true"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+109            android:exported="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+110            android:permission="android.permission.DUMP" >
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Satchit K\.gradle\caches\9.0.0\transforms\da3125880fae765c6052c2fc32bca159\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+122            </intent-filter>
+123        </receiver>
+124    </application>
+125
+126</manifest>
